@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: #D48282;
+}
+
+/* container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(227, 154, 18);
+  /* border: 2px solid green; */
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: rgb(0, 0, 0);
+  border: 2px solid black;
+  margin: 100px auto 20px;
+  padding: 30px 30px 10px;
+  border-radius: 15px;
+}
+
+.todo-app h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+
+/* input box */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffb700;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  position: relative;
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px;
+  color: aliceblue;
+  font-size: large;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff554242;
+  color: rgb(132, 91, 1);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+/* styling on todo list */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.hade {
+  padding-left: 200px;
+  margin-bottom: 20px;
+  border: 1px dashed #b3a641;
+}
+
+ul li {
+  border: 1px dashed #ceaeae;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+}
+
+.dis {
+  /* margin-left: 30vh; */
+  width: 300px;
+}
+
+.edit {
+  /* margin-left: 40vh; */
+  border-radius: 3px;
+}
+
+.delete {
+  border-radius: 3px;
+}
+
+.delete:hover,
+.edit:hover {
+  background: #544343;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 30px !important;
+}
+
+.completed-task {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.remaining-task {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.status {
+  padding: 3vh 10vh;
+  color: #ceaeae !important;
+
+}
+
+.line {
+  width: 300px;
+  text-decoration: line-through #962525 3px;
+}
